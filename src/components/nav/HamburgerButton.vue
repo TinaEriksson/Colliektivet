@@ -23,15 +23,15 @@ export default {
 
 <style scoped>
 .hamburger {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
 }
 
 .line {
   width: 100%;
   height: 6px;
-  background: teal;
-  margin-bottom: 9px;
+  background: #4d3d2d;
+  margin-bottom: 5px;
 }
 </style>

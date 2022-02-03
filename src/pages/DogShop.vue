@@ -1,6 +1,6 @@
 <template>
 <section>
-  <h2>Handla i min butik</h2>
+  <h2>Kom och handla i min butik</h2>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
     Ipsum ex laboriosam fugiat quas praesentium nam, saepe eius rerum, 
     suscipit itaque culpa dicta non veniam, quia aliquid autem maxime reiciendis temporibus.</p>

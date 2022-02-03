@@ -38,7 +38,7 @@ export default {
 
 <style scoped>
 .logoContainer {
-  height: 40vh;
+  height: 30vh;
   width: 30vh;
   margin: 0 auto;
 }
@@ -56,7 +56,7 @@ img {
   }
 
   nav {
-    padding: 2em;
+    padding: 2em 2em 0 0;
     display: flex;
     justify-content: flex-end;
   }

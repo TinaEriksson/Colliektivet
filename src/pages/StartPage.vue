@@ -1,6 +1,7 @@
 <template>
     <section>
       <h1>Välkommen hit!</h1>
+      <img src="" alt="">
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa quo modi doloribus 
         vero exercitationem laudantium, voluptate dolorem voluptates, nam doloremque ducimus inventore 
@@ -8,10 +9,10 @@
       </p>
     </section>
     <section>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique et
+     <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique et
       excepturi exercitationem, possimus quis voluptas, repellat ipsum, quia
       consequatur consectetur illum vitae cupiditate. Adipisci perspiciatis
-      labore qui beatae totam officia?
+      labore qui beatae totam officia?</p>
     </section>
 </template>
 

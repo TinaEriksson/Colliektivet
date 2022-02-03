@@ -1,12 +1,22 @@
 <template>
   <div class="menuContainer">
     <ul class="menuList">
-      <li><router-link to="/daycare">Dagis</router-link></li>
-      <li><router-link to="/bording">Pensionat</router-link></li>
-      <li><router-link to="/shop">Butik</router-link></li>
+      <router-link class="link"  to="/daycare"><i class="fas fa-paw"></i> Dagis</router-link>
+      <router-link class="link"  to="/bording"><i class="fas fa-dog"></i> Pensionat</router-link>
+      <router-link class="link" to="/shop"> <i class="fas fa-shopping-basket"></i> Butik</router-link>
     </ul>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+
+    };
+  },
+};
+</script>
 
 <style scoped>
 .animate {
@@ -41,13 +51,14 @@
   row-gap: 1.5em;
 }
 
-.menuList li {
-  font-size: 1.8rem;
+.link {
+  font-size: 1.7rem;
+  width: 100%;
 }
 
 .menuList a {
   text-decoration: none;
-  color: #333;
+  color: #4d3d2d;
   font-weight: bold;
   border-bottom: 2px solid transparent;
   padding-bottom: 0.25rem;
