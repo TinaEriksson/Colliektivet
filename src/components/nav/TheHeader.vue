@@ -48,13 +48,12 @@ img {
   width: 100%;
   text-align: center;
 }
+header {
+  background-color: #94b28d;
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.42);
+}
 
 @media only screen and (max-width: 800px) {
-  header {
-    background-color: #94B28D;
-    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.42);
-  }
-
   nav {
     padding: 2em 2em 0 0;
     display: flex;

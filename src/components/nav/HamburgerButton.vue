@@ -15,23 +15,25 @@ export default {
   },
   methods: {
     toggleMenu() {
-      this.$emit('toggleMenu');
-    }
-  }
+      this.$emit("toggleMenu");
+    },
+  },
 };
 </script>
 
 <style scoped>
-.hamburger {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
+@media only screen and (max-width: 800px) {
+  .hamburger {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
 
-.line {
-  width: 100%;
-  height: 6px;
-  background: #4d3d2d;
-  margin-bottom: 5px;
+  .line {
+    width: 100%;
+    height: 6px;
+    background: #4d3d2d;
+    margin-bottom: 5px;
+  }
 }
 </style>

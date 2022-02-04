@@ -15,22 +15,44 @@
 </template>
 
 <style scoped>
-footer {
-  position: static;
-  bottom: 0;
-  width: 100%;
-  min-height: 8vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  
+  .socialMedia a {
+    margin: 0 0.7em;
+    color: #4d3d2d;
+  }
 
-.socialMedia a {
-  margin: 0 0.7em;
-  color: #4d3d2d;
-}
+  i {
+    font-size: 2.5rem;
+  }
 
-i {
-  font-size: 2.5rem;
+
+@media only screen and (max-width: 800px) {
+  footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .socialMedia a {
+    margin: 0 0.7em;
+    color: #4d3d2d;
+  }
+
+  i {
+    font-size: 2.5rem;
+  }
 }
 </style>

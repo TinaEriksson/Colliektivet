@@ -1,9 +1,15 @@
 <template>
   <div class="menuContainer">
     <ul class="menuList">
-      <router-link class="link"  to="/daycare"><i class="fas fa-paw"></i> Dagis</router-link>
-      <router-link class="link"  to="/bording"><i class="fas fa-dog"></i> Pensionat</router-link>
-      <router-link class="link" to="/shop"> <i class="fas fa-shopping-basket"></i> Butik</router-link>
+      <router-link class="link" to="/daycare"
+        ><i class="fas fa-paw"></i> Dagis</router-link
+      >
+      <router-link class="link" to="/bording"
+        ><i class="fas fa-dog"></i> Pensionat</router-link
+      >
+      <router-link class="link" to="/shop">
+        <i class="fas fa-shopping-basket"></i> Butik</router-link
+      >
     </ul>
   </div>
 </template>
@@ -11,56 +17,73 @@
 <script>
 export default {
   data() {
-    return {
-
-    };
+    return {};
   },
 };
 </script>
 
 <style scoped>
-.animate {
-  animation: menu 0.6s forwards;
-}
-@keyframes menu {
-  from {
-    left: -100%;
-    opacity: 0;
-  }
-  to {
-    left: 0;
-    opacity: 1;
-  }
-}
-.menuContainer {
-  width: 100%;
-  min-height: 20vh;
-  left: -100%;
-  position: absolute;
-  transition: all 0.6s ease-in-out;
-  display: block;
-  background: white;
-}
-
 .menuList {
-  list-style: none;
   margin: 0;
-  padding: 1.5em;
+  padding: 1em;
   display: flex;
-  flex-direction: column;
-  row-gap: 1.5em;
+  flex-direction: row;
+  column-gap: 2em;
 }
-
 .link {
-  font-size: 1.7rem;
-  width: 100%;
+  font-size: 1.4rem;
+  color: #4d3d2d;
+  text-decoration: none;
+}
+.link:hover,
+.link:active,
+.link.router-link-active {
+  color: #8f6565;
+  text-decoration: underline;
 }
 
-.menuList a {
-  text-decoration: none;
-  color: #4d3d2d;
-  font-weight: bold;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 0.25rem;
+@media only screen and (max-width: 800px) {
+  .animate {
+    animation: menu 0.6s forwards;
+  }
+  @keyframes menu {
+    from {
+      left: -100%;
+      opacity: 0;
+    }
+    to {
+      left: 0;
+      opacity: 1;
+    }
+  }
+  .menuContainer {
+    width: 100%;
+    min-height: 20vh;
+    left: -100%;
+    position: absolute;
+    transition: all 0.6s ease-in-out;
+    display: block;
+    background: white;
+  }
+
+  .menuList {
+    list-style: none;
+    margin: 0;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
+  }
+
+  .link {
+    font-size: 1.7rem;
+    width: 100%;
+  }
+
+  .menuList a {
+    text-decoration: none;
+    color: #4d3d2d;
+    font-weight: bold;
+  }
 }
 </style>
