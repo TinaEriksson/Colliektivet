@@ -1,10 +1,11 @@
 <template>
-  <div class="menuContainer">
+  <div @click="closeMenu" class="menuContainer">
     <ul class="menuList">
+      <router-link class="link" to="/home"><i class="fas fa-home"></i> Hem</router-link>
       <router-link class="link" to="/daycare"
         ><i class="fas fa-paw"></i> Dagis</router-link
       >
-      <router-link class="link" to="/bording"
+      <router-link class="link" to="/bordinghouse"
         ><i class="fas fa-dog"></i> Pensionat</router-link
       >
       <router-link class="link" to="/shop">
@@ -19,6 +20,11 @@ export default {
   data() {
     return {};
   },
+  methods: {
+    closeMenu() {
+      this.$emit('toggleMenu');
+    },
+  }
 };
 </script>
 
@@ -58,7 +64,7 @@ export default {
   }
   .menuContainer {
     width: 100%;
-    min-height: 20vh;
+    height: 100%;
     left: -100%;
     position: absolute;
     transition: all 0.6s ease-in-out;
@@ -82,7 +88,7 @@ export default {
 
   .menuList a {
     text-decoration: none;
-    color: #4d3d2d;
+    color: #362706;
     font-weight: bold;
   }
 }

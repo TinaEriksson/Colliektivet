@@ -31,9 +31,9 @@ export default {
 
   .line {
     width: 100%;
-    height: 6px;
-    background: #4d3d2d;
-    margin-bottom: 5px;
+    height: 5px;
+    background: #362706;
+    margin-bottom: 6px;
   }
 }
 </style>
