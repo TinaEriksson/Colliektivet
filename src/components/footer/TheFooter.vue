@@ -1,3 +1,4 @@
+<!-- The component for the footer.-->
 <template>
   <footer>
     <div class="footerLogo">
@@ -18,6 +19,8 @@
         </p>
       </div>
     </div>
+    <!--A div containing social media. -->
+
     <div class="socialMedia">
       <a target="_blank" href="https://www.facebook.com/sarahlee.gesslin"
         ><i class="fab fa-facebook-square"></i
@@ -32,6 +35,7 @@
   </footer>
 </template>
 
+<!--styling for the footer component -->
 <style scoped>
 footer {
   position: static;
@@ -75,6 +79,7 @@ footer {
 i {
   font-size: 2rem;
 }
+/*styling if screen is smaller than 1200 px*/
 @media only screen and (max-width: 1200px) {
   footer {
     position: static;
@@ -95,6 +100,7 @@ i {
 }
 }
 
+/* Styling if screen is smaller than 800 px.*/
 @media only screen and (max-width: 800px) {
   footer {
     position: static;

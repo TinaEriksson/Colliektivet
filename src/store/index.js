@@ -1,3 +1,4 @@
+/* This indexfile is for the store */
 import { createStore } from "vuex";
 import productsModule from "./modules/product.js";
 

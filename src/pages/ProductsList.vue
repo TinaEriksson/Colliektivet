@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <section>
-
+ <!-- THIS PAGE IS NOT DONE!
+ THIS IS WHERE THE "WEBBSHOP" IS GOING TO BE -->
     </section>
   </div>
 </template>

@@ -14,6 +14,7 @@
         sandlådan eller bara strosa runt och må gott, helt i sin egen takt.
       </p>
     </section>
+ <!-- The section that contains pictures. -->
     <section>
       <div class="galleri">
         <div><img src="../../assets/tova.jpg" alt="Tova collie tik" /></div>

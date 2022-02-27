@@ -1,3 +1,4 @@
+<!-- The header component-->
 <template>
   <header>
     <nav>
@@ -27,11 +28,13 @@ export default {
       isOpen: false,
     };
   },
+  /* Method to toggle menu. */
   methods: {
     toggleMenu() {
       this.isOpen = !this.isOpen;
     },
   },
+  /* A method that activates class if menu is open.*/
   computed: {
     activateClass() {
       return this.isOpen;
@@ -40,6 +43,7 @@ export default {
 };
 </script>
 
+<!-- Styling for the header component. -->
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
 header {
@@ -64,7 +68,7 @@ img {
   text-align: center;
 }
 
-
+/* Styling if screen width is less than 800 px*/
 @media only screen and (max-width: 800px) {
   nav {
     padding: 2em 2em 0 0;

@@ -1,3 +1,5 @@
+/* Mockdata for the "webbshop". */
+
 export default {
   namespaced: true,
   state() {

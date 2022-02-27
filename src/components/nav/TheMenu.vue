@@ -1,3 +1,4 @@
+<!--component for the menu -->
 <template>
   <div @click="closeMenu" class="menuContainer">
     <ul class="menuList">
@@ -20,6 +21,7 @@ export default {
   data() {
     return {};
   },
+  /* Method that emits the toggle function on the menu*/
   methods: {
     closeMenu() {
       this.$emit('toggleMenu');
@@ -28,6 +30,7 @@ export default {
 };
 </script>
 
+<!-- Styling for the menu component-->
 <style scoped>
 .menuList {
   margin: 0;
@@ -48,6 +51,7 @@ export default {
   text-decoration: underline;
 }
 
+/* Styling if screen width is less than 800px*/
 @media only screen and (max-width: 800px) {
   .animate {
     animation: menu 0.6s forwards;

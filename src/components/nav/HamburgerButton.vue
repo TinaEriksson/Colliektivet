@@ -1,3 +1,4 @@
+    <!-- A component for the hamburger-button -->
 <template>
   <div class="hamburger" @click="toggleMenu">
     <div class="line line1"></div>
@@ -6,6 +7,7 @@
   </div>
 </template>
 
+
 <script>
 export default {
   data() {
@@ -13,6 +15,7 @@ export default {
       open: false,
     };
   },
+  /* Method to emit toggle function when button is pressed.*/
   methods: {
     toggleMenu() {
       this.$emit("toggleMenu");
@@ -21,6 +24,7 @@ export default {
 };
 </script>
 
+<!-- Styling for the hamburger-button -->
 <style scoped>
 @media only screen and (max-width: 800px) {
   .hamburger {
